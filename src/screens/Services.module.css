@@ -1,0 +1,38 @@
+body {
+  background-image: url('../assets/fondoss.jpeg');
+  background-size: auto; /* Ajusta el alto de la imagen de fondo al 100% del cuerpo */
+  background-position: center 119%; /* Centra la imagen de fondo */
+  /* Agrega otros estilos según sea necesario */
+}
+
+.galleryContainer {
+  width: 50vw; /* Establece el ancho del carrusel al 50% del ancho de la ventana */
+  margin: 80px auto; /* Centra el carrusel horizontalmente */
+  overflow-x: auto; /* Asegura el manejo del desplazamiento */
+  z-index: 999; /* Ajusta el z-index según sea necesario */
+  overflow: hidden;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.imageGallery {
+  z-index: 9999;
+  position: relative;
+  width: 100%; /* Establece el ancho del carrusel al 100% del contenedor */
+
+}
+
+.imageGallery .image-gallery-image {
+  width: 1600px; /* Establece el ancho de cada imagen dentro del carrusel a 1600px */
+  height: 1200px; /* Establece la altura de cada imagen dentro del carrusel a 1200px */
+ 
+}
+
+.imageGallery {
+  z-index: 9999;
+  position: relative;
+  width: 100%; /* o cualquier ancho deseado */
+  height: auto; /* o cualquier altura deseada */
+  border-radius: 20px;
+  overflow: hidden;
+}
+

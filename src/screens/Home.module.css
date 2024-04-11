@@ -1,0 +1,89 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../assets/fondo.jpeg.jpg'); /* Cambia la ruta por la de tu imagen */
+  background-size: cover; /* Para que la imagen se ajuste al tamaño del contenedor */
+  padding: 20px 20px 300px;
+  align-items: center;
+}
+.titleContainer {
+  padding-top: 80px;
+}
+
+/* Aqui van las letras */
+.home p {
+  font-size: 2.5em;
+  color: black;
+}
+
+.callToAction {
+  background-color: black;
+  color:#f1f1f1;
+  padding: 10px;
+  border-radius: 30px;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+
+.callToAction:hover {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.ctaContainer {
+  padding-top: 40px;
+}
+
+/* imagen */
+
+/* Home.module.css */
+
+.home p {
+  font-size: 2.5em;
+  color: black; /* Establece el color de las letras */
+}
+
+.titleContainer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.textLeft,
+.textRight {
+  opacity: 0;
+  animation: revealText 1s forwards;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.image {
+  max-width: 75%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.textLeft {
+  text-align: right;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%);
+}
+
+.textRight {
+  text-align: left;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+@keyframes revealText {
+  from {
+    opacity: 0;
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+  }
+  to {
+    opacity: 1;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+

@@ -1,0 +1,34 @@
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.Soporte {
+  background-color: black;
+  color: white;
+  padding: 20px; 
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.footer-section {
+  flex: 1; 
+  padding: 10px; 
+}
+
+.footer-section h3 {
+  margin-top: 0;
+}
+
+/* Estilos para el texto de copyright */
+.copyright {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+
+
